@@ -16,13 +16,21 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Toaster position="top-right" />
-        <div className="flex justify-end mx-4">
+        <div className="flex justify-end mx-4 mt-2">
           <Link
             className="inline-block rounded bg-indigo-400 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-300"
             target="_blank"
             href={'https://www.linkedin.com/in/venkatagurrala/'}
           >
             LinkedIn
+          </Link>
+
+          <Link
+            className="inline-block rounded ml-2 bg-indigo-400 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-300"
+            target="_blank"
+            href={'https://github.com/Narayanareddy96/homework'}
+          >
+            GitHub
           </Link>
         </div>
         <Providers>{children}</Providers>
